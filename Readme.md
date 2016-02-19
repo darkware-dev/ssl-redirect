@@ -12,6 +12,9 @@ I didn't find in many other existing plugins.
   * Hosting providers that either do not give you access to the filesystem
   * WordPress instances running under Nginx or another non-Apache webserver
   * WordPress Multisite installs where server-based configuration would be globally applied
+* The plugin detects HTTPS connections that terminate locally, as well as connections that
+  are proxied via load balancers, caching servers, or SSL terminating servers (so long as 
+  they follow at least one of the popular mechanisms for advertising that).
 * The redirection can occur on a configured set of domain names, addressing the issue where 
   your site might have multiple domain names mapped to it, but only some of them are 
   configured with SSL certificates.
